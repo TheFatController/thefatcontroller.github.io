@@ -14,20 +14,28 @@ footer {
     margin: 50px 0;
 }
 .gamecontainer {
-    padding: 20px; 
-    width: 300px;
     margin: auto;
-    resize: both;
+    resize: vertical;
     overflow: auto;
+    margin-bottom: 100px;
 }
 .gameswf {
     width: 100%;
     height: 100%;
 }
-
-
-
-
+.resizetip {
+    text-align: right;
+    right: 0;
+    bottom: 100px;
+    text-transform: uppercase;
+    font-family: 'robotob'
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.resizetip:hover {
+    opacity: 0;
+}
 .caption {
     position: absolute;
     width: 90%;
