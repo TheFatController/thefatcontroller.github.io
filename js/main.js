@@ -4,7 +4,7 @@ function change() {
 
 function link() {
 	$('#enter').animate({opacity:'0'}, 500)
-	$('body').animate({backgroundColor:'#ffffff'}, 500)
+	
 	setTimeout(function(){
 		window.location.href = "games.html";
 	},500);
