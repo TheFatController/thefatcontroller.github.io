@@ -49,6 +49,11 @@
 <script>
 var title = "title";
 var desc = "desc";
+var swfobj = "none"
+
+function hideswf(){
+    $('#swfembed').hide();
+}
 </script>
 
     
@@ -65,7 +70,7 @@ var desc = "desc";
     <script src="assets/js/modernizr.js"></script>
   </head>
 
-  <body>
+  <body onload="hideswf()">
   	<a class="anchor" id="pagetop"></a>
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -137,7 +142,7 @@ var desc = "desc";
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
                     <!--displaypic-->
-                    <img src="assets/img/flash/pacman.png" alt=""> 
+                    <img src="assets/img/flash/pacman2.png" alt=""> 
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                             <!--title-->
@@ -158,6 +163,34 @@ var desc = "desc";
                     </div><!-- he wrap -->
                 </div><!-- end col-12 -->
 
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <!--displaypic-->
+                    <img src="assets/img/flash/bloonstd5.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">BLOONS TD5</h3>
+                                <!--hyperlink-->
+                                <a href="assets/games/bloonstd5.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="bloons(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function bloons(){
+                                title = "bloons tower defence 5";
+                                desc = "Pop them balloons, boy!" + "<br />" + "And then pop more!";
+
+                                }
+                                </script>
+                                
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+                
+
             
 
 <!--DON'T TOUCH-->
@@ -165,6 +198,8 @@ var desc = "desc";
             </div><!-- portfolio -->
         </div><!-- portfolio container -->
 	 </div><!--/Portfoliowrap -->
+
+     
 	 
 	 <a class="anchor" id="multiplayeranchor"></a>
 	 <div id="portfoliowrap2">
@@ -175,7 +210,7 @@ var desc = "desc";
                 <div class="portfolio-item graphic-design">
 					<div class="he-wrap tpl6">
                     <!--displaypic-->
-					<img src="assets/img/multiplayer/agario.png" alt=""> 
+					<img src="assets/img/multiplayer/agario2.png" alt=""> 
                         <div class="he-view">
 							<div class="bg a0" data-animate="fadeIn">
                             <!--title-->
