@@ -82,11 +82,10 @@ var desc = "desc";
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
 
-            <li><a href="#flashanchor">MUSIC</a></li>
-            <li><a href="#multiplayeranchor">GAMES</a></li>
+            <li><a href="#flashanchor">FLASH</a></li>
+            <li><a href="#multiplayeranchor">MULTIPLAYER</a></li>
+            <li><a href="#musicanchor">MUSIC</a></li>
             <li><a href="#pagesanchor">PAGES</a></li>
-            <li><a href="#pagesanchor">EDU</a></li>
-            <li><a href="#pagesanchor">FUN</a></li>
             <li><a href="#moreanchor">+</a></li>
 
 
@@ -133,71 +132,35 @@ var desc = "desc";
         <div class="portfolio-centered">
             <div class="recentitems portfolio">
 
-				<div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/portfolio_09.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                              
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp">GO</a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
+				<!--DON'T TOUCH-->
 
-                    
-                <div class="portfolio-item books">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/portfolio_07.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_07.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-                    
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/portfolio_08.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_08.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-                                        
-                <div class="portfolio-item web-design">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/portfolio_01.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_01.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-    
-			<div class="portfolio-item books">
-                <div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/portfolio_10.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_10.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
+                    <!--displaypic-->
+                    <img src="assets/img/flash/pacman.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">pacman</h3>
+                                <!--hyperlink-->
+                                <a href="assets/games/pacman.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="pacman(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function pacman(){
+                                title = "pacman";
+                                desc = "Does this really need a description?" + "<br />" + "Get a high score.";
+                                }
+                                </script>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+            
+
+<!--DON'T TOUCH-->
                     
             </div><!-- portfolio -->
         </div><!-- portfolio container -->
@@ -217,6 +180,7 @@ var desc = "desc";
 							<div class="bg a0" data-animate="fadeIn">
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">Agar.io</h3>
+                                <!--hyperlink-->
                                 <a href="http://agar.io" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="agar(); modalinfo();"><i class="fa fa-align-left"></i></a>
@@ -240,6 +204,7 @@ var desc = "desc";
                             <div class="bg a0" data-animate="fadeIn">
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">Browser quest</h3>
+                                <!--hyperlink-->
                                 <a href="http://agar.io" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="bq(); modalinfo();"><i class="fa fa-align-left"></i></a>
@@ -270,82 +235,70 @@ var desc = "desc";
 
 
 
-	 <a class="anchor" id="multiplayeranchor"></a>
+	 <a class="anchor" id="musicanchor"></a>
 	 <div id="portfoliowrap2">
-        <h3>MUSIC AND SOUND<br><br>&clubs;</h3>
-
+        <h3>MUSIC AND SOUND<br><br>&diams;</h3>
         <div class="portfolio-centered">
             <div class="recentitems portfolio">
 
-				<div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/multiplayer/agario.png" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">INCREDIBOX</h3>
-                              
-                                <a href="http://www.incredibox.com/" class="dmbutton a2" data-animate="fadeInUp">GO</a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
+<!--DON'T TOUCH-->
 
-                    
                 <div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/multiplayer/browserquest.png" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">browser quest</h3>
-                              
-                                <a href="http://browserquest.mozilla.org" class="dmbutton a2" data-animate="fadeInUp">PLAY</a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-                    
+                    <div class="he-wrap tpl6">
+                    <!--displaypic-->
+                    <img src="assets/img/music/incredibox.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">incredibox</h3>
+                                <!--hyperlink-->
+                                <a href="http://incredibox.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="incred(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function incred(){
+                                title = "incredibox";
+                                desc = "Make music happen!" + "<br />" + "Order around your monotonous slaves for your own enjoyment.";
+                                }
+                                </script>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <!--displaypic-->
+                    <img src="assets/img/music/pandora.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">pandora</h3>
+                                <!--hyperlink-->
+                                <a href="http://pandora.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="pandora(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function pandora(){
+                                title = "pandora";
+                                desc = "Free Internet Radio!" + "<br />" + "ODESZA Radio Masterrace.";
+                                }
+                                </script>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+<!--DON'T TOUCH-->
+
             </div><!-- portfolio -->
         </div><!-- portfolio container -->
 	 </div><!--/Portfoliowrap -->
 
 
-	 <a class="anchor" id="multiplayeranchor"></a>
-	 <div id="portfoliowrap2">
-        <h3>FUN<br><br>&clubs;</h3>
-
-        <div class="portfolio-centered">
-            <div class="recentitems portfolio">
-
-				<div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/multiplayer/agario.png" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Agar.io</h3>
-                              
-                                <a href="http://agar.io" class="dmbutton a2" data-animate="fadeInUp">PLAY</a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-
-                    
-                <div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/multiplayer/browserquest.png" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">browser quest</h3>
-                              
-                                <a href="http://browserquest.mozilla.org" class="dmbutton a2" data-animate="fadeInUp">PLAY</a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->		
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-                    
-            </div><!-- portfolio -->
-        </div><!-- portfolio container -->
-	 </div><!--/Portfoliowrap -->
+	 
 
 
 
