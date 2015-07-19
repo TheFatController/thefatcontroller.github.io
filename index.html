@@ -19,6 +19,7 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
     <script type="text/javascript">
+    
     <!--
     function updateTime() {
         var currentTime = new Date();
@@ -50,11 +51,8 @@
 var title = "title";
 var desc = "desc";
 var swfobj = "none"
-
-function hideswf(){
-    $('#swfembed').hide();
-}
 </script>
+
 
     
 
@@ -70,7 +68,8 @@ function hideswf(){
     <script src="assets/js/modernizr.js"></script>
   </head>
 
-  <body onload="hideswf()">
+  <body onload="fadein()" id="bodday">
+  <div id="bigboycont">
   	<a class="anchor" id="pagetop"></a>
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -180,6 +179,58 @@ function hideswf(){
                                 function bloons(){
                                 title = "bloons tower defence 5";
                                 desc = "Pop them balloons, boy!" + "<br />" + "And then pop more!";
+
+                                }
+                                </script>
+                                
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <!--displaypic-->
+                    <img src="assets/img/flash/desktoptd.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">DESKTOP TD</h3>
+                                <!--hyperlink-->
+                                <a href="assets/games/desktoptd.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="desktoptd(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function desktoptd(){
+                                title = "desktop tower defence";
+                                desc = "THE CLASSIC." + "<br />" + "Wup-woooahhhh!";
+
+                                }
+                                </script>
+                                
+                            </div><!-- he bg -->
+                        </div><!-- he view -->      
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <!--displaypic-->
+                    <img src="assets/img/flash/tanks.png" alt=""> 
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                            <!--title-->
+                                <h3 class="a1" data-animate="fadeInDown">TANKS</h3>
+                                <!--hyperlink-->
+                                <a href="assets/games/tanks.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <!--functionname-->
+                                <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="tanks(); modalinfo();"><i class="fa fa-align-left"></i></a>
+                                <!--text-->
+                                <script>
+                                function tanks(){
+                                title = "tanks";
+                                desc = "Yeah mum, I'm studying for physics..." + "<br />" + "Mum, it's projectile motion.";
 
                                 }
                                 </script>
@@ -493,6 +544,8 @@ function hideswf(){
       </div>
     </div>
   </div>
+</div>
+
 </div>
 
 <script>
