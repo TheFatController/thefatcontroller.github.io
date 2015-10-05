@@ -147,7 +147,7 @@ var swfobj = "none"
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">pacman</h3>
                                 <!--hyperlink-->
-                                <a href="assets/games/pacman.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <a onclick="showembed(this, 43.7)" data-game="assets/games/pacman.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="pacman(); modalinfo();"><i class="fa fa-align-left"></i></a>
                                 <!--text-->
@@ -171,7 +171,7 @@ var swfobj = "none"
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">BLOONS TD5</h3>
                                 <!--hyperlink-->
-                                <a href="assets/games/bloonstd5.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <a onclick="showembed(this, 43.7)" data-game="assets/games/bloonstd5.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="bloons(); modalinfo();"><i class="fa fa-align-left"></i></a>
                                 <!--text-->
@@ -197,7 +197,7 @@ var swfobj = "none"
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">DESKTOP TD</h3>
                                 <!--hyperlink-->
-                                <a href="assets/games/desktoptd.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <a onclick="showembed(this, 43.7)" data-game="assets/games/desktoptd.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="desktoptd(); modalinfo();"><i class="fa fa-align-left"></i></a>
                                 <!--text-->
@@ -223,7 +223,7 @@ var swfobj = "none"
                             <!--title-->
                                 <h3 class="a1" data-animate="fadeInDown">TANKS</h3>
                                 <!--hyperlink-->
-                                <a href="assets/games/tanks.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
+                                <a onclick="showembed(this, 43.7)" data-game="assets/games/tanks.swf" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-power-off"></i></a>
                                 <!--functionname-->
                                 <a data-toggle="modal" href="#mainmodal" class="dmbutton a2" data-animate="fadeInUp" onclick="tanks(); modalinfo();"><i class="fa fa-align-left"></i></a>
                                 <!--text-->
@@ -251,6 +251,31 @@ var swfobj = "none"
 	 </div><!--/Portfoliowrap -->
 
      
+
+
+<div id="embeddiv" style="width:60%;height:600px;left:20%;position:relative;top:20px;">
+	<embed id="embedgame" src="assets/games/desktoptd.swf" style="width:100%;height:100%;">
+	
+</div>
+
+<script>
+function hideembed() {
+	$('#embeddiv').hide()
+}
+function showembed(somethingyo, height) {
+	$('#embeddiv').show();
+	var source = somethingyo.getAttribute("data-game");
+	var game = document.getElementById("embedgame");
+	var clone = game.cloneNode(true);
+  	clone.setAttribute('src',source);
+  	game.parentNode.replaceChild(clone,game);
+
+  	var widthh = window.innerWidth;
+  	var widthhh = widthh / 100 * height;
+  	document.getElementById('embeddiv').style.height = widthhh + "px";
+}
+</script>
+
 	 
 	 <a class="anchor" id="multiplayeranchor"></a>
 	 <div id="portfoliowrap2">
